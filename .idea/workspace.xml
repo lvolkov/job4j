@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1717649f-84fe-4522-8b9d-05f2751a1ff3" name="Default Changelist" comment="А существует ли треугольник?[#208271]">
-      <change afterPath="$PROJECT_DIR$/chapter_001/src/main/java/ru/job4j/condition/Triangle.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/chapter_001/src/test/java/ru/job4j/condition/TriangleTest.java" afterDir="false" />
+    <list default="true" id="1717649f-84fe-4522-8b9d-05f2751a1ff3" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/chapter_001/src/main/java/ru/job4j/condition/MultiMax.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter_001/src/test/java/ru/job4j/condition/MultiMaxTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <list id="d3b4fbff-9b0e-4e0b-9c75-89c597d32756" name="3. Коммиты на решения задач.[#18069]_2" comment="">
@@ -33,32 +33,27 @@
     <file path="$PROJECT_DIR$/.idea/workspace.xml">
       <ranges>
         <range start1="3" end1="6" start2="3" end2="6" changelist="1717649f-84fe-4522-8b9d-05f2751a1ff3" />
-        <range start1="34" end1="60" start2="34" end2="44" changelist="1717649f-84fe-4522-8b9d-05f2751a1ff3" />
-        <range start1="87" end1="89" start2="71" end2="73" changelist="1717649f-84fe-4522-8b9d-05f2751a1ff3" />
-        <range start1="97" end1="98" start2="81" end2="82" changelist="1717649f-84fe-4522-8b9d-05f2751a1ff3" />
-        <range start1="103" end1="104" start2="87" end2="88" changelist="1717649f-84fe-4522-8b9d-05f2751a1ff3" />
-        <range start1="113" end1="114" start2="97" end2="99" changelist="1717649f-84fe-4522-8b9d-05f2751a1ff3" />
-        <range start1="118" end1="119" start2="103" end2="104" changelist="1717649f-84fe-4522-8b9d-05f2751a1ff3" />
-        <range start1="128" end1="129" start2="113" end2="114" changelist="1717649f-84fe-4522-8b9d-05f2751a1ff3" />
-        <range start1="134" end1="135" start2="119" end2="120" changelist="1717649f-84fe-4522-8b9d-05f2751a1ff3" />
-        <range start1="143" end1="146" start2="128" end2="130" changelist="1717649f-84fe-4522-8b9d-05f2751a1ff3" />
-        <range start1="150" end1="151" start2="134" end2="135" changelist="1717649f-84fe-4522-8b9d-05f2751a1ff3" />
-        <range start1="159" end1="161" start2="143" end2="145" changelist="1717649f-84fe-4522-8b9d-05f2751a1ff3" />
-        <range start1="168" end1="168" start2="152" end2="154" changelist="1717649f-84fe-4522-8b9d-05f2751a1ff3" />
-        <range start1="171" end1="173" start2="157" end2="157" changelist="1717649f-84fe-4522-8b9d-05f2751a1ff3" />
-        <range start1="243" end1="244" start2="227" end2="235" changelist="1717649f-84fe-4522-8b9d-05f2751a1ff3" />
-        <range start1="275" end1="276" start2="266" end2="267" changelist="1717649f-84fe-4522-8b9d-05f2751a1ff3" />
-        <range start1="278" end1="279" start2="269" end2="270" changelist="1717649f-84fe-4522-8b9d-05f2751a1ff3" />
-        <range start1="283" end1="284" start2="274" end2="275" changelist="1717649f-84fe-4522-8b9d-05f2751a1ff3" />
-        <range start1="286" end1="288" start2="277" end2="279" changelist="1717649f-84fe-4522-8b9d-05f2751a1ff3" />
-        <range start1="290" end1="292" start2="281" end2="283" changelist="1717649f-84fe-4522-8b9d-05f2751a1ff3" />
-        <range start1="294" end1="296" start2="285" end2="287" changelist="1717649f-84fe-4522-8b9d-05f2751a1ff3" />
-        <range start1="298" end1="299" start2="289" end2="290" changelist="1717649f-84fe-4522-8b9d-05f2751a1ff3" />
-        <range start1="315" end1="316" start2="306" end2="307" changelist="d3b4fbff-9b0e-4e0b-9c75-89c597d32756" />
-        <range start1="318" end1="319" start2="309" end2="310" changelist="d3b4fbff-9b0e-4e0b-9c75-89c597d32756" />
-        <range start1="323" end1="324" start2="314" end2="315" changelist="1717649f-84fe-4522-8b9d-05f2751a1ff3" />
-        <range start1="326" end1="328" start2="317" end2="319" changelist="1717649f-84fe-4522-8b9d-05f2751a1ff3" />
-        <range start1="330" end1="331" start2="321" end2="322" changelist="d3b4fbff-9b0e-4e0b-9c75-89c597d32756" />
+        <range start1="34" end1="61" start2="34" end2="56" changelist="1717649f-84fe-4522-8b9d-05f2751a1ff3" />
+        <range start1="88" end1="89" start2="83" end2="84" changelist="1717649f-84fe-4522-8b9d-05f2751a1ff3" />
+        <range start1="104" end1="105" start2="99" end2="100" changelist="1717649f-84fe-4522-8b9d-05f2751a1ff3" />
+        <range start1="113" end1="116" start2="108" end2="110" changelist="1717649f-84fe-4522-8b9d-05f2751a1ff3" />
+        <range start1="120" end1="121" start2="114" end2="115" changelist="1717649f-84fe-4522-8b9d-05f2751a1ff3" />
+        <range start1="129" end1="131" start2="123" end2="125" changelist="1717649f-84fe-4522-8b9d-05f2751a1ff3" />
+        <range start1="169" end1="169" start2="163" end2="165" changelist="1717649f-84fe-4522-8b9d-05f2751a1ff3" />
+        <range start1="172" end1="174" start2="168" end2="168" changelist="1717649f-84fe-4522-8b9d-05f2751a1ff3" />
+        <range start1="251" end1="252" start2="245" end2="253" changelist="1717649f-84fe-4522-8b9d-05f2751a1ff3" />
+        <range start1="284" end1="285" start2="285" end2="286" changelist="1717649f-84fe-4522-8b9d-05f2751a1ff3" />
+        <range start1="287" end1="288" start2="288" end2="289" changelist="1717649f-84fe-4522-8b9d-05f2751a1ff3" />
+        <range start1="292" end1="293" start2="293" end2="294" changelist="1717649f-84fe-4522-8b9d-05f2751a1ff3" />
+        <range start1="295" end1="297" start2="296" end2="298" changelist="1717649f-84fe-4522-8b9d-05f2751a1ff3" />
+        <range start1="299" end1="301" start2="300" end2="302" changelist="1717649f-84fe-4522-8b9d-05f2751a1ff3" />
+        <range start1="303" end1="305" start2="304" end2="306" changelist="1717649f-84fe-4522-8b9d-05f2751a1ff3" />
+        <range start1="307" end1="308" start2="308" end2="309" changelist="1717649f-84fe-4522-8b9d-05f2751a1ff3" />
+        <range start1="324" end1="325" start2="325" end2="326" changelist="d3b4fbff-9b0e-4e0b-9c75-89c597d32756" />
+        <range start1="327" end1="328" start2="328" end2="329" changelist="d3b4fbff-9b0e-4e0b-9c75-89c597d32756" />
+        <range start1="332" end1="333" start2="333" end2="334" changelist="1717649f-84fe-4522-8b9d-05f2751a1ff3" />
+        <range start1="335" end1="336" start2="336" end2="337" changelist="1717649f-84fe-4522-8b9d-05f2751a1ff3" />
+        <range start1="339" end1="340" start2="340" end2="341" changelist="d3b4fbff-9b0e-4e0b-9c75-89c597d32756" />
       </ranges>
     </file>
   </component>
@@ -86,7 +81,7 @@
     <property name="project.structure.side.proportion" value="0.0" />
     <property name="settings.editor.selected.configurable" value="settings.github" />
   </component>
-  <component name="RunManager" selected="JUnit.TriangleTest">
+  <component name="RunManager" selected="JUnit.MultiMaxTest">
     <configuration name="MaxTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="chapter_001" />
       <extension name="coverage">
@@ -102,7 +97,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MaxTest.whenMax1To2Then2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="MultiMaxTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="chapter_001" />
       <extension name="coverage">
         <pattern>
@@ -111,14 +106,13 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="ru.job4j.condition" />
-      <option name="MAIN_CLASS_NAME" value="ru.job4j.condition.MaxTest" />
-      <option name="METHOD_NAME" value="whenMax1To2Then2" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="MAIN_CLASS_NAME" value="ru.job4j.condition.MultiMaxTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MaxTest.whenMax3To3Then3" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="MultiMaxTest.whenSecondMax" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="chapter_001" />
       <extension name="coverage">
         <pattern>
@@ -127,8 +121,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="ru.job4j.condition" />
-      <option name="MAIN_CLASS_NAME" value="ru.job4j.condition.MaxTest" />
-      <option name="METHOD_NAME" value="whenMax3To3Then3" />
+      <option name="MAIN_CLASS_NAME" value="ru.job4j.condition.MultiMaxTest" />
+      <option name="METHOD_NAME" value="whenSecondMax" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -167,11 +161,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.MultiMaxTest" />
+        <item itemvalue="JUnit.MultiMaxTest.whenSecondMax" />
         <item itemvalue="JUnit.TriangleTest" />
         <item itemvalue="JUnit.TriangleTest.whenNoExist" />
         <item itemvalue="JUnit.MaxTest" />
-        <item itemvalue="JUnit.MaxTest.whenMax3To3Then3" />
-        <item itemvalue="JUnit.MaxTest.whenMax1To2Then2" />
       </list>
     </recent_temporary>
   </component>
@@ -249,7 +243,14 @@
       <option name="project" value="LOCAL" />
       <updated>1579023870972</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="А существует ли треугольник?[#208271]">
+      <created>1579026748795</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1579026748795</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -282,30 +283,30 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="223" y="68" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1577907980034" />
-    <state x="424" y="0" key="CommitChangelistDialog2" timestamp="1579026654169">
+    <state x="424" y="0" key="CommitChangelistDialog2" timestamp="1579028115164">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="424" y="0" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1579026654169" />
+    <state x="424" y="0" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1579028115164" />
     <state x="548" y="168" key="FileChooserDialogImpl" timestamp="1577912998399">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="548" y="168" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1577912998399" />
-    <state width="1493" height="195" key="GridCell.Tab.0.bottom" timestamp="1579026729788">
+    <state width="1493" height="195" key="GridCell.Tab.0.bottom" timestamp="1579028115180">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="195" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1579026729788" />
-    <state width="1493" height="195" key="GridCell.Tab.0.center" timestamp="1579026729788">
+    <state width="1493" height="195" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1579028115180" />
+    <state width="1493" height="195" key="GridCell.Tab.0.center" timestamp="1579028115180">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="195" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1579026729788" />
-    <state width="1493" height="195" key="GridCell.Tab.0.left" timestamp="1579026729788">
+    <state width="1493" height="195" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1579028115180" />
+    <state width="1493" height="195" key="GridCell.Tab.0.left" timestamp="1579028115180">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="195" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1579026729788" />
-    <state width="1493" height="195" key="GridCell.Tab.0.right" timestamp="1579026729788">
+    <state width="1493" height="195" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1579028115180" />
+    <state width="1493" height="195" key="GridCell.Tab.0.right" timestamp="1579028115180">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="195" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1579026729788" />
+    <state width="1493" height="195" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1579028115180" />
     <state width="746" height="260" key="GridCell.Tab.1.bottom" timestamp="1577913055680">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -330,10 +331,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="618" y="329" width="431" height="165" key="VCS.ChangelistChooser/0.0.1536.824@0.0.1536.824" timestamp="1578164870338" />
-    <state x="361" y="146" key="Vcs.Push.Dialog.v2" timestamp="1579023884390">
+    <state x="361" y="146" key="Vcs.Push.Dialog.v2" timestamp="1579026772898">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="146" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1579023884390" />
+    <state x="361" y="146" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1579026772898" />
     <state x="465" y="238" key="com.intellij.ide.util.TipDialog" timestamp="1579022402015">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
