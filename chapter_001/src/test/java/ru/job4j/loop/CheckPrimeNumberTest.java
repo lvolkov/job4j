@@ -18,8 +18,8 @@ public class CheckPrimeNumberTest {
         assertThat(rsl, is(false));
     }
     @Test
-    public void when9() {
-        boolean rsl = CheckPrimeNumber.check(9);
+    public void when1() {
+        boolean rsl = CheckPrimeNumber.check(1);
         assertThat(rsl, is(false));
     }
 }
