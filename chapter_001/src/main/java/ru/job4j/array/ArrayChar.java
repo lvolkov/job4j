@@ -10,11 +10,10 @@ public class ArrayChar {
 
     public static boolean startsWith(char[] word, char[] pref) {
         boolean result = true;
-        for (int i=0; i<pref.length; i++) {
-            if (pref[i]!= word [i]) {
-                    result=false;
-                    break;
-            }
+        String Word = new String (word); // переводим текстовый массив word в строку
+        String Pref = new String (pref); // переводим текстовый массив pref в строку
+        if (!Word.startsWith(Pref)) {  // проверяем условие не совпадения начала строки
+            result = false;
         }
         return result;
     }
