@@ -8,10 +8,10 @@ public class AlgoArray {
         array[3] = temp; // записываем в ячейку с индексом 3 значение временной переменной.
         temp = array[1];
         array[1] = array[2];
-        array[2] =temp;
+        array[2] = temp;
         temp = array[3];
         array[3] = array[4];
-        array[4] =temp;
+        array[4] = temp;
 
 
         for (int index = 0; index < array.length; index++) {

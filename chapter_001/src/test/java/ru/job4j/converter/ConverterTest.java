@@ -21,16 +21,16 @@ public class ConverterTest {
         Assert.assertEquals(expected, out);
     }
     @Test
-    public void DollarToRuble() {
+    public void dollarToRuble() {
         int in = 4;
-        int expected =240;
+        int expected = 240;
         int out = Converter.dollarToRuble(in);
         Assert.assertEquals(expected, out);
     }
     @Test
-    public void EuroToRuble() {
+    public void euroToRuble() {
         int in = 5;
-        int expected =350;
+        int expected = 350;
         int out = Converter.euroToRuble(in);
         Assert.assertEquals(expected, out);
     }

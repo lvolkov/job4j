@@ -9,20 +9,20 @@ package ru.job4j.calculator;
  */
 public class Calculator {
 
-    public static void add (double first, double second) {
-        double result=first+second;
+    public static void add(double first, double second) {
+        double result = first + second;
         System.out.println(first + " + " + second + " = " + result);
     }
-    public static void div (double first, double second) {
-        double result=first/second;
+    public static void div(double first, double second) {
+        double result = first / second;
         System.out.println(first + " / " + second + " = " + result);
     }
-    public static void multiply (double first, double second) {
-        double result=first*second;
+    public static void multiply(double first, double second) {
+        double result = first * second;
         System.out.println(first + " * " + second + " = " + result);
     }
     public static void subtrack(double first, double second) {
-        double result=first-second;
+        double result = first - second;
         System.out.println(first + " - " + second + " = " + result);
     }
 
@@ -32,9 +32,9 @@ public class Calculator {
      * @param args- second второй аргумент
      */
     public static void main(String[] args) {
-        add (1, 1);
-        div (3, 4);
-        multiply (6, 6);
-        subtrack (1, 8);
+        add(1, 1);
+        div(3, 4);
+        multiply(6, 6);
+        subtrack(1, 8);
     }
 }

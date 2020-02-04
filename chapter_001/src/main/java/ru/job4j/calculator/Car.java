@@ -1,7 +1,7 @@
 package ru.job4j.calculator;
 
 public class Car {
-    private double volume=10;
+    private double volume = 10;
 
     public void drive(int kilometer) {
         this.volume = this.volume - kilometer;

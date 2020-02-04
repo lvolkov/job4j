@@ -1,19 +1,12 @@
 package ru.job4j.array;
 
-/**
- * массив,заполняющийся числами,возведенными в квадрат
- *
- * @author Leonid Volkov (l.volkov@list.ru)
- * @version 1
- * @since 26.01.2020
- */
 
 public class Square {
     public static int[] calculate(int bound) {
         int[] rst = new int[bound];
         // заполнить массив через цикл элементами от 1 до bound возведенными в квадрат
-        for (int i=0;i<bound;i++) {
-            rst[i]=i*i;
+        for (int i = 0; i < bound; i++) {
+            rst[i] = i * i;
         }
         return rst;
     }

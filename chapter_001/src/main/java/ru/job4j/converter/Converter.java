@@ -32,20 +32,20 @@ public class Converter {
             System.out.println("140 rubles are 2 EURO. Test result : " + passed);
 
             int inRubUsd = 120;
-            int expectedRubUsd =2;
+            int expectedRubUsd = 2;
             int outRubUsd = rubleToDollar(inRubUsd);
             boolean passedRubUsd = expectedRubUsd == outRubUsd;
             System.out.println("120 rubles are 2 USD. Test result : " + passedRubUsd);
 
             // test false
             int inUsdRub = 5;
-            int expectedUsdRub =240;
+            int expectedUsdRub = 240;
             int outUsdRub = dollarToRuble(inUsdRub);
             boolean passedUsdRub = expectedUsdRub == outUsdRub;
             System.out.println("5 USD are 240 Rub. Test result : " + passedUsdRub);
 
             int inEuroRub = 4;
-            int expectedEuroRub =280;
+            int expectedEuroRub = 280;
             int outEuroRub = euroToRuble(inEuroRub);
             boolean passedEuroRub = expectedEuroRub == outEuroRub;
             System.out.println("4 EURO are 280 Rub. Test result : " + passedEuroRub);
