@@ -23,7 +23,7 @@ public class DefragmentTest {
 
     @Test
     public void firstSecondNull() {
-        String[] input = {null,null, "I", "wanna", null,null, "be", null, "compressed"};
+        String[] input = {null, null, "I", "wanna", null, null, "be", null, "compressed"};
         String[] compressed = Defragment.compress(input);
         String[] expected = {"I", "wanna", "be", "compressed", null, null, null, null, null};
         assertThat(compressed, is(expected));
