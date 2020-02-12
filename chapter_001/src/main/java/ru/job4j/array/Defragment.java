@@ -8,9 +8,8 @@ package ru.job4j.array;
 public class Defragment {
     public static String[] compress(String[] array) {
         //int cell = 0; // определяем первую ячейку массива в которую будет произведена запись не пустого значения
-        //for (String index:array) {
         for (int index = 0; index < array.length; index++) {
-                if (array[index]== null) {
+                if (array[index] == null) {
                 int point = index; // создаем переменную и присваиваем ей индекс первой пустой ячейки
                 while (array[point] == null && point < array.length-1) {
                     point++; //определяем первый индекс не нулевой ячейки
