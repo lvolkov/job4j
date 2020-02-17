@@ -2,23 +2,27 @@ package ru.job4j.array;
 /**
  * метод перемещающий пустые ячейки массива в конец
  * @author Leonid Volkov (l.volkov@list.ru)
+ * в цикле while определяем первый индекс не нулевой ячейки
+ * записываем в "корзину" данные первой пустой ячейки массива
+ * копируем в первую ячейку массива данные из первой найденной заполненной ячейки и
+ * перемещаем первую не null ячейку
+ *
  * @version 3
  * @since 07.02.2020
  */
 public class Defragment {
     public static String[] compress(String[] array) {
-        //int cell = 0; // определяем первую ячейку массива в которую будет произведена запись не пустого значения
-        for (int index = 0; index < array.length; index++) {
-                if (array[index] == null) {
-                int point = index; // создаем переменную и присваиваем ей индекс первой пустой ячейки
+         for (int index = 0; index < array.length; index++) {
+            if (array[index] == null) {
+                int point = index;
                 while (array[point] == null && point < array.length-1) {
-                    point++; //определяем первый индекс не нулевой ячейки
+                    point++;
                 }
-                String temp = array[index]; // записываем "в корзину" данные первой пустой ячейки массива
-                array[index] = array[point]; // копируем в первую ячейку массива данные из первой найденной заполненной ячейки
-                array[point] = temp; // перемещаем первую не null ячейку
+                    String temp = array[index];
+                    array[index] = array[point];
+                    array[point] = temp;
             }
-                 System.out.print(array[index] + " "); // не понятно для чего это команда?
+                 System.out.print(array[index] + " ");
             }
             return array;
         }

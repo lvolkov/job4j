@@ -7,14 +7,12 @@ public class SqMax {
                 &&
             first > third
                 &&
-                first > forth) {
-                    result = first;
-
+            first > forth) {
+            result = first;
         } else if (second > third
                 &&
             second > forth) {
                 result = second;
-
         } else if (third > forth) {
             result = third;
         }

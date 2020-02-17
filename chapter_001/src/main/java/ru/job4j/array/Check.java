@@ -6,7 +6,6 @@ package ru.job4j.array;
  * @version 2
  * @since 27.01.2020
  */
-
 public class Check {
     public static boolean mono(boolean[] data) {
         boolean result = true;
