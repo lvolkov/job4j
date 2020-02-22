@@ -22,4 +22,9 @@ public class MaxTest {
         int result = Max.max(3, 3);
         assertThat(result, is(3));
     }
+    @Test
+    public void whenMax56The56() {
+        int result = Max.max(3, 5,56,43);
+        assertThat(result, is(56));
+    }
 }
