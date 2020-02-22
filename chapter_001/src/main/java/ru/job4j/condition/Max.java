@@ -5,9 +5,12 @@ public class Max {
         return first > second ? first : second;
     }
     public static int max(int first, int second, int third) {
-        return first > max(second, third) ? first : max(second, third);
+        int temp = max(first, second);
+        return max(temp,third);
     }
     public static int max(int first, int second, int third, int fourth) {
-        return first > max(second, max(third,fourth)) ? first : max(second, max(third,fourth));
+        int temp = max(max(first,second),third);
+        return max(temp, fourth);
     }
 }
+
