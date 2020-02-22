@@ -1,8 +1,11 @@
 package tracker;
 
 public class Animal {
+    String name;
     public Animal() {
-        super();
+    }
+    public Animal(String animal){
+        name = animal;
         System.out.println(getClass());
     }
 }
