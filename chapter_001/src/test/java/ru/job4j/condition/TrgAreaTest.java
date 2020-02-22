@@ -1,5 +1,6 @@
 package ru.job4j.condition;
 
+import org.junit.Assert;
 import org.junit.Test;
 import static org.hamcrest.core.Is.is;
 import static org.junit.Assert.assertThat;
@@ -22,7 +23,8 @@ public class TrgAreaTest {
         Point third = new Point (2,0);
         TrgArea trg = new TrgArea(first,second,third);
         double result = trg.area();
-        int result2 =(int)result;
-        assertThat(result2, is(3));
+       // int result2 =(int)result;
+       // assertThat(result2, is(3),0.01);
+        Assert.assertEquals(3, result, 0.01);
     }
 }
