@@ -1,17 +1,15 @@
-/*package ru.job4j.condition;
+package ru.job4j.condition;
 
-        import org.junit.Assert;
-        import org.junit.Test;
+import org.junit.Test;
+import static org.hamcrest.core.Is.is;
+import static org.junit.Assert.assertThat;
 
 public class PointTest {
     @Test
-    public void distance() {
-        int in1 = 0;
-        int in2 = 2;
-        int in3 = 0;
-        int in4 = 0;
-        double expected = 2;
-        double out = Point.distance(in1, in2, in3, in4);
-        Assert.assertEquals(expected, out, 0.01);
+    public void distance3d() {
+        Point first = new Point (0,0,0);
+        Point second = new Point (2,2,2);
+        double result = first.distance3d(second);
+        assertThat(result, is(3.4641016151377544));
     }
-}*/
+}
