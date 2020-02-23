@@ -1,7 +1,7 @@
 package tracker;
 
 public class Animal {
-    String name;
+   private String name;
     public Animal() {
     }
     public Animal(String animal){
