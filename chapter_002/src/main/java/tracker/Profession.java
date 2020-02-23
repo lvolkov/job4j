@@ -1,7 +1,7 @@
 package tracker;
 
 public class Profession {
-    public String name, surname, education, birthday;
+    private String name, surname, education, birthday;
     public Profession(String name,String surname,String education,String birthday) {
         this.name = name;
         this.surname = surname;
