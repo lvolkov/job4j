@@ -1,4 +1,4 @@
-package tracker;
+package ru.job4j.oop;
 
 public class Programmer extends Engeneer {
     public Programmer(String name,String surname,String education,String birthday){
