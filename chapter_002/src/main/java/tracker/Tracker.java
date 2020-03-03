@@ -34,7 +34,7 @@ public class Tracker {
     }
     public Item findById(String id) {
         Item findId = null;
-        for (int i = 0; i < items.length; i++) {
+        for (int i = 0; i < this.position; i++) {
             if (id.equals(items[i].getId())) {
                 findId = items[i];
                 break;

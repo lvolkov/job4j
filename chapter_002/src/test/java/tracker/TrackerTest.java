@@ -2,7 +2,7 @@ package tracker;
 
 import org.junit.Test;
 import java.util.Arrays;
-
+import static org.hamcrest.Matchers.arrayContainingInAnyOrder;
 import static org.hamcrest.Matchers.is;
 import static org.junit.Assert.assertThat;
 
@@ -24,8 +24,8 @@ public class TrackerTest {
         Item item4 = t.add(new Item ("item3"));
         Item item5 = t.add(new Item ("item4"));
         Item[] result = t.findByName("item1");
-        Item[] expect = {item1,item1};
-        assertThat(Arrays.toString(result), is(Arrays.toString(expect)));
+        Item[] expect = {item1,item3};
+        assertThat(result, is(expect));
     }
     @Test
     public void whenFindAllThenItems() {
@@ -36,8 +36,8 @@ public class TrackerTest {
         Item item4 = t.add(new Item ("item3"));
         Item item5 = t.add(new Item ("item4"));
         Item[] result = t.findAll();
-        Item[] expect = {item1,item5,item1,item3,item4};
-        assertThat(Arrays.toString(result), is(Arrays.toString(expect)));
+        Item[] expect = {item1,item2,item3,item4,item5};
+        assertThat(result, is(expect));
     }
     @Test
     public void whenFindIdThenItem() {
@@ -52,8 +52,8 @@ public class TrackerTest {
         item4.setId("13");
         Item item5 = t.add(new Item ("item4"));
         item5.setId("14");
-        Item result = t.findById("13");
-        Item expect = item3;
-        assertThat(Arrays.asList(result), is(Arrays.asList(expect)));
+        Item result = t.findById("11");
+        Item expect = item2;
+        assertThat(result.getName(), is(expect.getName()));
     }
 }
