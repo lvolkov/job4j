@@ -1,5 +1,5 @@
 package tracker;
 
-public class Bug extends Item {
+//public class Bug extends Item {
 
-}
+//}
