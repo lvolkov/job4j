@@ -33,17 +33,39 @@ public class Tracker {
         return Arrays.copyOf(findName,count);
     }
     public Item findById(String id) {
-        Item findId = null;
-        for (int i = 0; i < this.position; i++) {
-            if (id.equals(items[i].getId())) {
-                findId = items[i];
-                break;
-            }
-        }
-        return findId;
+        //Item findId = null;
+       // for (int i = 0; i < this.position; i++) {
+        //    if (id.equals(items[i].getId())) {
+        //        findId = items[i];
+        //        break;
+        //    }
+        //}
+       // return findId;
+        int index = indexOf(id);
+        return index != -1 ? items[index] : null;
     }
     private String generateId() {
         Random rm = new Random();
         return String.valueOf(rm.nextLong() + System.currentTimeMillis());
+    }
+    private int indexOf(String id) {
+        int rsl = -1;
+        for (int index = 0; index < position; index++) {
+            if (items[index].getId().equals(id)) {
+                rsl = index;
+                break;
+            }
+        }
+        return rsl;
+    }
+    public boolean replace(String id, Item item) {
+        boolean result = false;
+        int index = indexOf(id);
+        if (index!= -1) {
+            item.setId(id);
+            items[index]=item;
+            result = true;
+        }
+        return result;
     }
 }
