@@ -23,10 +23,10 @@ public class Tracker {
     }
     public Item[] findByName(String key) {
         int count = 0;
-        Item[] findName = new Item[this.position];
-        for (int i = 0; i < this.position; i++) {
-            if (key.equals(this.items[i].getName())) {
-                findName[count] = this.items[i];
+        Item[] findName = new Item[position];
+        for (int i = 0; i < position; i++) {
+            if (key.equals(items[i].getName())) {
+                findName[count] = items[i];
                 count++;
             }
         }
@@ -70,10 +70,14 @@ public class Tracker {
     }
     public boolean delete(String id) {
         int index = indexOf(id);
-        items[index] = null;
-        System.arraycopy(items, index+1, items, index, position-index);
-        items[position - 1] = null;
-        position--;
-        return true;
+        boolean aDelete = false;
+        if (index != -1) {
+            items[index] = null;
+            System.arraycopy(items, index + 1, items, index, position - index);
+            items[position - 1] = null;
+            position--;
+            aDelete = true;
+        }
+        return aDelete;
     }
 }

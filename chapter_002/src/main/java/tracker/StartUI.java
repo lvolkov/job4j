@@ -2,12 +2,14 @@ package tracker;
 
 //import java.util.Scanner;
 
+import java.util.Arrays;
+
 public class StartUI {
         public void init(Input input, Tracker tracker) {
             boolean run = true;
             while (run) {
                 this.showMenu();
-                System.out.print("Select: ");
+                //System.out.print("Select: ");
                 int select = Integer.parseInt(input.askStr("Select: "));
                 if (select == 0) {
                     System.out.println("=== Create a new Item ====");
@@ -15,30 +17,38 @@ public class StartUI {
                     String name = input.askStr("Enter name: ");
                     Item item = new Item(name);
                     tracker.add(item);
+                    System.out.println("The Item " + "'" + name + "'"+", id " + item.getId() + " added");
+
                  } else if (select == 1) {
                     System.out.println("=== Show all Item ====");
-                    tracker.findAll();
+                    System.out.println(Arrays.toString(tracker.findAll()));
                  } else if (select == 2) {
                     System.out.println("=== Edit item ====");
                     //System.out.print("Enter id: ");
                     String id = input.askStr("Enter id: ");
-                    Item name = tracker.findById(id);
+                    Item name = new Item (input.askStr("Enter name: "));
                     tracker.replace(id,name);
+                    System.out.println("Item replaced, new name " + name.getName());
                  } else if (select == 3) {
                     System.out.println("=== Delete item ====");
                     //System.out.print("Enter id: ");
                     String id = input.askStr("Enter id: ");
-                    tracker.delete(id);
+                    boolean aDelite = tracker.delete(id);
+                    if(aDelite) {
+                        System.out.println( " Item deleted");
+                    } else {
+                        System.out.println( " Item didn't delete");
+                    }
                  } else if (select == 4) {
                     System.out.println("=== Find item by Id ====");
                     //System.out.print("Enter id: ");
                     String id = input.askStr("Enter id: ");
-                    tracker.findById(id);
+                    System.out.println(tracker.findById(id));
                  } else if (select == 5) {
                     System.out.println("=== Find items by name ====");
                     //System.out.print("Enter name: ");
                     String name = input.askStr("Enter name: ");
-                    tracker.findByName(name);
+                    System.out.println(String.valueOf(tracker.findByName(name)));
                  } else if (select == 6) {
                     System.out.println("=== Exit Program ====");
                     run = false;
