@@ -21,7 +21,9 @@ public class StartUI {
 
                  } else if (select == 1) {
                     System.out.println("=== Show all Item ====");
-                    System.out.println(Arrays.toString(tracker.findAll()));
+                    Item[] item = tracker.findAll();
+                    for ( int i=0; i < item.length; i++)
+                    item[i].prnt();
                  } else if (select == 2) {
                     System.out.println("=== Edit item ====");
                     //System.out.print("Enter id: ");
