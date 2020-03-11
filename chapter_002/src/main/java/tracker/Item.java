@@ -20,7 +20,11 @@ import java.util.Objects;
         public void setName(String name) {
             this.name = name;
         }
-        public void prnt() {
-            System.out.println(name);
-        }
+
+     @Override
+     public String toString() {
+         return "Item{" +
+                 "name='" + name + '\'' +
+                 '}';
+     }
  }

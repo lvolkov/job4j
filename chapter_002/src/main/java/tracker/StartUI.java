@@ -23,14 +23,18 @@ public class StartUI {
                     System.out.println("=== Show all Item ====");
                     Item[] item = tracker.findAll();
                     for ( int i=0; i < item.length; i++)
-                    item[i].prnt();
-                 } else if (select == 2) {
+                        System.out.println(item[i].toString());
+                    } else if (select == 2) {
                     System.out.println("=== Edit item ====");
                     //System.out.print("Enter id: ");
                     String id = input.askStr("Enter id: ");
                     Item name = new Item (input.askStr("Enter name: "));
-                    tracker.replace(id,name);
-                    System.out.println("Item replaced, new name " + name.getName());
+                    boolean aReplace = tracker.replace(id,name);
+                    if(aReplace) {
+                        System.out.println( " Item replaced");
+                    } else {
+                        System.out.println( " Item didn't replace");
+                    }
                  } else if (select == 3) {
                     System.out.println("=== Delete item ====");
                     //System.out.print("Enter id: ");
