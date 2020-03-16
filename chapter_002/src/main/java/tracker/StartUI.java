@@ -1,7 +1,7 @@
 package tracker;
 
 public class StartUI {
-    public static void creatItem(Input input,Tracker tracker) {
+    public static void createItem(Input input,Tracker tracker) {
         System.out.println("=== Create a new Item ====");
         String name = input.askStr("Enter name: ");
         Item item = new Item(name);
@@ -51,7 +51,7 @@ public class StartUI {
                 this.showMenu();
                 int select = Integer.parseInt(input.askStr("Select: "));
                 if (select == 0) {
-                    StartUI.creatItem(input, tracker);
+                    StartUI.createItem(input, tracker);
                  } else if (select == 1) {
                     StartUI.showAll(tracker);
                     } else if (select == 2) {
