@@ -1,7 +1,7 @@
 package tracker;
 
 public class Predator extends Animal {
-    public Predator(){
+    public Predator() {
         super();
     }
     public Predator(String animal) {

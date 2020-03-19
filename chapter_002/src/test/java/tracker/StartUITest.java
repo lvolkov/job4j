@@ -31,13 +31,13 @@ public class StartUITest {
     }
     @Test
     public void whenDeleteItem() {
-        Tracker tracker = new Tracker ();
+        Tracker tracker = new Tracker();
         Item item = new Item("new item");
         tracker.add(item);
-        String[] answers = {item.getId(),"new item"};
+        String[] answers = {item.getId(), "new item"};
         StartUI.deleteItem(new StubInput(answers), tracker);
         Item deleted = tracker.findById(item.getId());
-        assertThat(deleted, is (IsNull.nullValue()));
+        assertThat(deleted, is(IsNull.nullValue()));
     }
 
 

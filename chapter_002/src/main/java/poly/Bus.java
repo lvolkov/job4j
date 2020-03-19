@@ -3,7 +3,7 @@ package poly;
 
 import java.util.Scanner;
 
-public class Bus implements Transport{
+public class Bus implements Transport {
     @Override
     public void move() {
     int speed = 40;
@@ -17,7 +17,7 @@ public class Bus implements Transport{
 
     @Override
     public double gasVolue(int x) {
-        double cost = 40*x;
+        double cost = 40 * x;
         return cost;
     }
 }

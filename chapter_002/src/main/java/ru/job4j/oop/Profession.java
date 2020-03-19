@@ -2,7 +2,7 @@ package ru.job4j.oop;
 
 public class Profession {
     private String name, surname, education, birthday;
-    public Profession(String name,String surname,String education,String birthday) {
+    public Profession(String name, String surname, String education, String birthday) {
         this.name = name;
         this.surname = surname;
         this.education = education;
@@ -11,13 +11,13 @@ public class Profession {
     public String getName() {
         return this.name;
     }
-    public String getSurname(){
+    public String getSurname() {
         return this.surname;
     }
-    public String getEducation(){
+    public String getEducation() {
         return this.education;
     }
-    public String getBirthday(){
+    public String getBirthday() {
         return this.birthday;
     }
 

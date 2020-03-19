@@ -13,13 +13,13 @@ import java.util.Random;
 public class Tracker {
     private Item[] items = new Item[100];
     private int position = 0;
-    public Item add(Item item){
+    public Item add(Item item) {
         item.setId(this.generateId());
-        items[this.position++]=item;
+        items[this.position++] = item;
         return item;
     }
     public Item[] findAll() {
-       return Arrays.copyOf(items,position);
+       return Arrays.copyOf(items, position);
     }
     public Item[] findByName(String key) {
         int count = 0;
@@ -30,7 +30,7 @@ public class Tracker {
                 count++;
             }
         }
-        return Arrays.copyOf(findName,count);
+        return Arrays.copyOf(findName, count);
     }
     public Item findById(String id) {
         //Item findId = null;
@@ -61,9 +61,9 @@ public class Tracker {
     public boolean replace(String id, Item item) {
         boolean result = false;
         int index = indexOf(id);
-        if (index!= -1) {
+        if (index != -1) {
             item.setId(id);
-            items[index]=item;
+            items[index] = item;
             result = true;
         }
         return result;

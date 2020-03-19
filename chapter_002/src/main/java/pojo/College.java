@@ -12,6 +12,6 @@ public class College {
         c.set(Calendar.DAY_OF_MONTH, 5);
         s.setName("Иванов Иван Иванович");
         s.setGroup("B12");
-        System.out.println("Студент " + s.getName()+"," + "группа " + s.getGroup() + " " + ", дата поступления " + c.getTime());
+        System.out.println("Студент " + s.getName() + "," + "группа " + s.getGroup() + " " + ", дата поступления " + c.getTime());
     }
 }

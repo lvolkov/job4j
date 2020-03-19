@@ -22,7 +22,7 @@ public class Matches {
         int count = 1;
         int m = 11;
         while (m > 0) {
-            if (count%2==0) {
+            if (count % 2 == 0) {
                 System.out.println(gamer1 + "- возьмте спичку от 1 до 3 шт.");
             } else {
                 System.out.println(gamer2 + "- возьмте спичку от 1 до 3 шт.");

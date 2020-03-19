@@ -3,7 +3,7 @@ package pojo;
 public class Book {
     private String name;
     private int volume;
-    public Book (String name, int volume) {
+    public Book(String name, int volume) {
         this.name = name;
         this.volume = volume;
     }

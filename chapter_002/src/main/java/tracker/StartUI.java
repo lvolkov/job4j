@@ -1,31 +1,32 @@
 package tracker;
 
 public class StartUI {
-    public static void createItem(Input input,Tracker tracker) {
+    public static void createItem(Input input, Tracker tracker) {
         System.out.println("=== Create a new Item ====");
         String name = input.askStr("Enter name: ");
         Item item = new Item(name);
         tracker.add(item);
-        System.out.println("The Item " + "'" + name + "'"+", id " + item.getId() + " added");
+        System.out.println("The Item " + "'" + name + "'" + ", id " + item.getId() + " added");
     }
     public static void showAll(Tracker tracker) {
         System.out.println("=== Show all Item ====");
         Item[] item = tracker.findAll();
-        for ( int i=0; i < item.length; i++)
-        System.out.println(item[i].toString());
-    }
-    public static void editItem(Input input,Tracker tracker) {
-        System.out.println("=== Edit item ====");
-        String id = input.askStr("Enter id: ");
-        Item name = new Item (input.askStr("Enter name: "));
-        boolean aReplace = tracker.replace(id,name);
-        if(aReplace) {
-            System.out.println( " Item replaced");
-        } else {
-            System.out.println( " Item didn't replace");
+        for (int i = 0; i < item.length; i++) {
+            System.out.println(item[i].toString());
         }
     }
-    public static void deleteItem(Input input,Tracker tracker) {
+    public static void editItem(Input input, Tracker tracker) {
+        System.out.println("=== Edit item ====");
+        String id = input.askStr("Enter id: ");
+        Item name = new Item(input.askStr("Enter name: "));
+        boolean aReplace = tracker.replace(id, name);
+        if (aReplace) {
+            System.out.println(" Item replaced");
+        } else {
+            System.out.println(" Item didn't replace");
+        }
+    }
+    public static void deleteItem(Input input, Tracker tracker) {
         System.out.println("=== Delete item ====");
         String id = input.askStr("Enter id: ");
         boolean aDelite = tracker.delete(id);
@@ -35,12 +36,12 @@ public class StartUI {
             System.out.println(" Item didn't delete");
         }
     }
-    public static void findItemById (Input input,Tracker tracker){
+    public static void findItemById(Input input, Tracker tracker) {
         System.out.println("=== Find item by Id ====");
         String id = input.askStr("Enter id: ");
         System.out.println(tracker.findById(id));
     }
-    public static void findItemByName(Input input,Tracker tracker) {
+    public static void findItemByName(Input input, Tracker tracker) {
         System.out.println("=== Find items by name ====");
         String name = input.askStr("Enter name: ");
         System.out.println(String.valueOf(tracker.findByName(name)));
