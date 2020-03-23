@@ -2,7 +2,7 @@ package stragery;
 
 public class Paint {
     public static void draw(Shape shape) {
-        System.out.println(shape.draw());
+        System.out.print(shape.draw());
     }
     public static void main(String[] args) {
         Square s = new Square();

@@ -32,7 +32,7 @@ public class PaintTest {
                                 .add("+        +")
                                 .add("+        +")
                                 .add("+  +  +  +")
-                                .add(System.lineSeparator())
+                                //.add(System.lineSeparator())
                                 .toString()
                 )
         );
