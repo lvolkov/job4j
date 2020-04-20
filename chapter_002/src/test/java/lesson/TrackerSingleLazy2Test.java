@@ -3,7 +3,7 @@ package lesson;
 import org.junit.Test;
 import tracker.Tracker;
 
-import static org.junit.Assert.assertTrue;
+import static org.junit.Assert.assertSame;
 
 public class TrackerSingleLazy2Test {
 
@@ -11,11 +11,7 @@ public class TrackerSingleLazy2Test {
     public void whenTrackerSingleLazy2() {
         Tracker ts1 = TrackerSingleLazy2.getInstance();
         Tracker ts2 = TrackerSingleLazy2.getInstance();
-        boolean eql = false;
-        if (ts1 == ts2) {
-            eql = true;
-        }
-        assertTrue(eql);
+        assertSame(ts1,ts2);
         System.out.println(ts1 + " = " + ts2);
     }
 }
